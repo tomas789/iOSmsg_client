@@ -118,4 +118,6 @@ script:
   # Run the tests, ensuring the path is set correctly.
   - source devel/setup.bash
   - catkin_make run_tests && catkin_make test
+  # Just run it. (It checks for dependencies)
+  - rosrun iosmsg_client client.py --help
 
