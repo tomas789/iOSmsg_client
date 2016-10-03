@@ -39,7 +39,7 @@ rosrun iosmsg_client client.py --help
 
 ## Use cases
 
-I'm using this app to debug my implementation of MSCKF, called (Tonav)[https://github.com/tomas789/tonav]. But there is a lot of other use cases. For example you can use it for
+I'm using this app to debug my implementation of MSCKF, called [Tonav](https://github.com/tomas789/tonav). But there is a lot of other use cases. For example you can use it for
  * localization of your robot using your iDevice (iPhone, iPad, ...)
  * learn more about RabbitMQ
  * computer vision (_not implemented yet_)
