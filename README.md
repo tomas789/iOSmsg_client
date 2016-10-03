@@ -37,6 +37,12 @@ You can specify how to connect to RabbitMQ or where to publish data. Get more in
 rosrun iosmsg_client client.py --help
 ```
 
+## FAQ
+
+**IMU message doesn't contain both accelerometer and gyroscope measuremets.**
+
+As measurements doesn't arrive at the same time from sensor, we publish data separately. It gives you the most accurate data that are available. If you want data to arrive at the same time, you have to implement some kind of interpolation.
+
 ## Use cases
 
 I'm using this app to debug my implementation of MSCKF, called [Tonav](https://github.com/tomas789/tonav). But there is a lot of other use cases. For example you can use it for
