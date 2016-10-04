@@ -73,10 +73,10 @@ before_install:
   - sudo apt-get install -y python-catkin-pkg python-rosdep python-wstool ros-$ROS_DISTRO-catkin
   - source /opt/ros/$ROS_DISTRO/setup.bash
   # Prepare rosdep to install dependencies.
+  - sudo rosdep init
   - sudo sh -c "echo \"yaml https://github.com/tomas789/rosdistro/raw/master/rosdep/base.yaml\" > /etc/ros/rosdep/sources.list.d/30-tomas789.list"
   - sudo sh -c "echo \"yaml https://github.com/tomas789/rosdistro/raw/master/rosdep/python.yaml\" > /etc/ros/rosdep/sources.list.d/30-tomas789.list"
   - sudo sh -c "echo \"yaml https://github.com/tomas789/rosdistro/raw/master/rosdep/osx-homebrew.yaml osx\" > /etc/ros/rosdep/sources.list.d/30-tomas789.list"
-  - sudo rosdep init
   - rosdep update
 
 # Create a catkin workspace with the package under integration.
